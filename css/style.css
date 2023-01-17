@@ -2,12 +2,23 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container {}
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #eec802;
+    border-color: #eec802;
+}
 
 .callout-container {
     height: 100vh;
 
-    background: url("../images/whiskey-background.jpg") no-repeat center center fixed;
+    background: url("../images/whiskey-background.jpg") no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -25,7 +36,7 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    width:100%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -35,19 +46,35 @@ body {
 
 .favorites-container {}
 
-/* Block dividers */
+/* Navbar */
 
-.block-divider {
-    width: 75px;
-    height: 5px;
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-toggler {
     border: 0;
 }
 
-.block-divider--orange {
-    background-color: #f05f40;
+.navbar-dark .navbar-brand {
+    font-weight: bold;
 }
 
-.block-divider--short {}
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
 
 /*jumbotron*/
 
@@ -73,6 +100,20 @@ body {
     font-style: italic;
     color: #d0d0d0;
 }
+
+/* Block dividers */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+}
+
+.block-divider--orange {
+    background-color: #f05f40;
+}
+
+.block-divider--short {}
 
 /* Buttons */
 
